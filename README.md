@@ -8,7 +8,7 @@ I developed this game for my Computer Networks Course at Boston College. The ass
 
 The server (for simplicity) only handles 5 games at a time. When a player or chatter first connects to the server, the server will find the next avalible open game. It will then pass the corresponding IP and Port of the game multicast room and the IP and Port of the chat room associated with that game room to the player or chatter. The server does nothing more than keep track of the game and chat rooms. Each game room has a max of 2 players and each chat room can have unlimited members. From here on out the players and chatters talk with each other though the multicast room. The only time they will contact the server is when they want to end the game or switch rooms.
 
-##### Changing Rooms
+### Changing Rooms
 
 Players are not allowed to change game rooms. They must quit their current game and contact the server again to be assigned another game room. Chatters on the other hand, are allowed to switch rooms. If a chatter types "@CHANGE" they can enter the new chatroom index number that they want to switch to. When they do so they leave the corresponding game room and move to the new game room associated with the new chat room index they just entered. 
 
